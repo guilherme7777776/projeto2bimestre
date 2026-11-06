@@ -2,11 +2,11 @@ const Board = () => {
     return (
         <div className="Board">
             {[
-                [1, 2, 3, "g"],
-                [1, 2, 3, "g"],
-                [1, 2, 3, "g"]
+                [{value: 0}, {value: 1}, {value: 2}, {value: "mine"}],
+                [{value: 3}, {value: 4}, {value: 5}, {value: 6}],
+                [{value: 7}, {value: 8}, {value: "mine"}, {value: "mine"}]
             ].map((row) => (
-                <div>{row.map((cell) => cell)}</div>
+                <div className="row">{row.map((cell) => <div className = "cell">{cell.value}</div>)}</div>
             ))}
         </div>
     ); 

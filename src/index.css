@@ -6,7 +6,8 @@
   --app-bg: #151515;
   --text: #1a1a1a;
   --surface: #ccc;
-
+  --cell-border-color: #bbb;
+  
   background: var(--app-bg);
   color: var(--text);
 
